@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>display.html</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a class="left" href="style.html"><img src="http://pngimg.com/uploads/red_arrow/red_arrow_PNG14.png" alt=""></a>
+		<h1>Свойство display</h1>
+		<a class="right" href=""><img src="http://pngimg.com/uploads/red_arrow/red_arrow_PNG14.png" alt=""></a>
+	</header>
+	<main>
+		<h2>1. значение <em>none</em> </h2>
+		<p>none-самое простое значение,при котором элемент не показывается как будто его нет</p>
+		<div style="border: 1px solid black">
+			невидимый div(
+			<div style="display:none">я невидимка</div>
+			) стоит внутри скобок
+          </div>
+            <h2>2.значение <em>block</em></h2>
+            <ul style="font-size: 20px">
+            	<li>блочные элементы, распологаются один за другим,вертикально</li>
+                <li>блок стримится расширится на всю доступную ширину</li>
+                <li>можно задавать ширину и высоту</li>
+            </ul>
+			<p>По-умолчанию свойство display: block имеют следующие теги: h1-h6, p, div, li и др.</p>
+			<div style="border:1px solid black">
+				<div style="background: yellow; width:120px; height:60px">первый</div>
+				<div style="background: red; width:975px; height:60px">второй</div>
+			</div>
+		</div>
+		<h2>3. значение <em>inline</em></h2>
+		<ul>
+			<li>элементы распологаются на той же строке,последовательно</li>
+			<li>ширина и высота элемента определяются по содержимому,поменять их нельзя</li>
+		</ul>
+		<p>по умолчанию свойство display inline имеют следующие теги: a,b,span,img и др</p>
+		<span style="background: white">
+			<span style="background: lime; width:666px">ширина и высота</span>
+			<span style="background: aqua; width:777px">игнорируется</span>
+		</span>
+		<h2>4. значение <em>inline-block</em></h2>
+		<p>Элементы с display: inline-block продолжают находиться в строке (inline), но при этом могут иметь важные свойства блока (block).</p>
+		<ul>
+		<b>как инлайн элемент:</b>
+		<li>распологается в строке</li>
+		<li>размер устанавливается по содержимомуо</li>
+		</ul>
+		<ul>
+		<b>как блочный элемент:</b>
+		<li>элемент всегда прямоугольный</li>	
+        <li>работают свойства width/height, тоесть можно задать ширину/высоту</li>
+		</ul>
+		<h2>5.значение fleks</h2>
+		<p>все элементы,которые находятся внутри блока с display:fleks,ведут себя буд-то им установили display:inline block</p>
+	</main>
+</body>
+</html>

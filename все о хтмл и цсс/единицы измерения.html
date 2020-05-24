@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 10px;">
+<head>
+	<meta charset="UTF-8">
+	<title>единицы измерения</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a class="left" href="style.html"><img src="http://pngimg.com/uploads/red_arrow/red_arrow_PNG14.png" alt=""></a>
+		<h1>единицы измерения</h1>
+		<a class="right" href=""><img src="http://pngimg.com/uploads/red_arrow/red_arrow_PNG14.png" alt=""></a>
+	</header>
+	<main>
+		<h2>Исключения, в которых % берётся не от родителя</h2>
+		<!-- ol-нумерованный список -->
+		<!-- ul-маркерованный список -->
+		<ol>
+			<li>
+				<b>margin-left</b>
+				<p>Процент берётся от ШИРИНЫ родительского блока, а не от его margin-left</p>
+			</li>
+			<li>
+				<b>line-height</b>
+				<!-- это высота строки -->
+				<p>Процент берётся от ТЕКУЩЕГО РАЗМЕРА ШРИФТА, а не от line-height родителя</p>
+			</li>
+			<li>
+				<b>width/height</b>
+				<p>При position:fixed; процент берётся от ширины/высоты окна, а не ширины/высоты родителя</p>
+			</li>
+		</ol>
+		<h2>Единица измерения размера шрифта em</h2>
+		<div style="font-size: 10px">
+    	 Текущий размер шрифта 10px
+    	 <div>
+    	 	<div style="font-size:1em">
+	    	 	Первый текст - размер текста:60px 10*1.6
+	    	 	<div>"font-size:1em"</div>
+	    	 	второй текст-размер текста 32px,16*2
+
+	    	 </div>
+		</div>
+         <h2>Единица измерения rem: смесь px и em</h2>
+         <ul style="font-size: 40px">
+         	<li style="font-size: 1.5rem">на дворе
+         		<ul>
+         			<li style="font-size: 1.5rem">трава
+         				<ul>
+         					<li style="font-size: 1.5rem">на траве
+         						<ul>
+         							<li style="font-size: 1.5rem">дрова</li>
+         						</ul>
+         					</li>
+         				</ul>
+         			</li>
+         		</ul>
+         	</li>
+         </ul>
+	</main>
+</body>
+</html>

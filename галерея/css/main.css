@@ -1,0 +1,25 @@
+
+{
+    padding: 0;
+    margin: 0;
+    /*правило вычисления размеров элементов:по границе элимента*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+body{
+  background-color: red;
+ 
+}
+main{
+ background-color: blue;
+    width: 90%
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    /*Переносы (если не вмещаются)*/
+    flex-wrap: wrap;
+    /*Первые два числа-смещение по х и у ,3-е число размытие*/
+    /*толщина тени и её цвет*/
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0, 3);
+}
