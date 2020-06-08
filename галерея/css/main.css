@@ -1,19 +1,17 @@
-
-{
+* {
     padding: 0;
     margin: 0;
-    /*правило вычисления размеров элементов:по границе элимента*/
+    /*Правило вычеслений размеров элемента:по границе элемента*/
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing: border-box;
 }
-body{
-  background-color: red;
- 
+body {
+    background-color: red;
 }
-main{
- background-color: blue;
-    width: 90%
+main {
+    background-color: blue;
+    width: 90%;
     max-width: 1000px;
     margin: auto;
     display: flex;
@@ -21,5 +19,47 @@ main{
     flex-wrap: wrap;
     /*Первые два числа-смещение по х и у ,3-е число размытие*/
     /*толщина тени и её цвет*/
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0, 3);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+} 
+.icon{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.img-link{
+    display: block;
+    max-width: 500px;
+    max-height: 490px;
+    width: calc(50% - 10px);
+    height: calc(95vh / 16*9);
+    margin: 5px;
+}
+.img-link:hover{
+    /*Плавность анимации*/
+    filter:transition: 1.5s;
+    /*размытие*/
+    /*filter: blur(2px);*/
+    /*яркость*/
+    /*filter:brightness(1.5);*/
+    /*Контрастность*/
+    /*filter:contrast(1.6);*/
+    /*Перевод в чёрно-белое*/
+    /*filter:grayscale(1.5);*/
+    /*Меняет цвета изображения в зависимости от цветового круга*/
+    /*filter:hue-rotate(45deg);*/
+    /*Делает негатив изображения (инвертирует)*/
+    /*filter:invert(150);*/
+    /*Насыщенность цветов*/
+   /* filter:saturate(5);*/
+   /*Сепия(эффект старины)*/
+   /*filter:sepia(1.5);*/
+   /*масштаб*/
+   transform:scale(1.2)
+   /*поворот*/
+   transform:rotate(-15deg)
+   /*перенос*/
+   translate(-200px, -100px)
+   /*ranslate(<сдвиг по х>, <сдвиг по у>)*/
+   transform:scale(0.5) rotate(-15deg) translate(-200px, -100px);
 }
